@@ -34,7 +34,7 @@ const Todo = () => {
             } else {
                 
                 if(token && id){
-                    await axios.post("http://localhost:4000/v2/addTask",
+                    await axios.post("https://todobackendnayansi-12f8a87b8d26.herokuapp.com/v2/addTask",
                     {title:Inputs.title,body:Inputs.body, user:id}, {headers: {
                         "Content-Type" : "application/json",
                         "token" : token
@@ -68,7 +68,7 @@ const Todo = () => {
       
         try {
           const response = await axios.delete(
-            `http://localhost:4000/v2/deleteTask/${currId}`,
+            `https://todobackendnayansi-12f8a87b8d26.herokuapp.com/v2/deleteTask/${currId}`,
             {
               headers: {
                 "Content-Type": "application/json",
@@ -98,7 +98,7 @@ const Todo = () => {
     }
 
     const fetchData =async()=>{
-        await axios.get(`http://localhost:4000/v2/getTask`, {headers : {
+        await axios.get(`https://todobackendnayansi-12f8a87b8d26.herokuapp.com/v2/getTask`, {headers : {
             'Content-Type' : "application/json",
             "token" : token,
             "id" : id

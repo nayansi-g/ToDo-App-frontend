@@ -24,7 +24,7 @@ const SignUp = () => {
             password: password.current.value
         }
         console.log(newUser)
-        await axios.post("http://localhost:4000/v1/register", newUser, {
+        await axios.post("https://todobackendnayansi-12f8a87b8d26.herokuapp.com/v1/register", newUser, {
             headers: {
                 'Content-Type': 'application/json',
             }

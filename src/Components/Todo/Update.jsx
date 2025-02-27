@@ -15,7 +15,7 @@ const Update = ({ hide, task, fetchData }) => {
 
         const fetchTaskDetails = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/v2/getTask/${task}`, {
+                const response = await axios.get(`https://todobackendnayansi-12f8a87b8d26.herokuapp.com/v2/getTask/${task}`, {
                     headers: {
                         "Content-Type": "application/json",
                         "token":localStorage.getItem("token") ,
@@ -41,7 +41,7 @@ const Update = ({ hide, task, fetchData }) => {
         }
 
         try {
-            const response = await axios.put(`http://localhost:4000/v2/updateTask/${task}`, {
+            const response = await axios.put(`https://todobackendnayansi-12f8a87b8d26.herokuapp.com/v2/updateTask/${task}`, {
                 title,
                 body
             }, {
