@@ -1,0 +1,31 @@
+.user-png {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-brand {
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.btn-nav {
+    background-color: red;
+    color: white !important;
+    border-radius: 10px;
+    font-weight: bold;
+    padding-left: 4px;
+}
+
+.btn-nav:hover {
+    font-size: 17px;
+    cursor: pointer;
+}
+.nav-border:hover{
+    border-bottom: 1px solid red;
+}
+
+.nav-item{
+    margin: 4px;
+}
+
