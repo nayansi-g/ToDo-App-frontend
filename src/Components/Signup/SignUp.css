@@ -117,7 +117,10 @@
         padding: 1.5rem;
     }
 
-    .input-signup,
+    .input-signup {
+        max-width: fit-content;
+        max-width: 100px;
+    }
     .btn-signup {
         max-width: 100%;
     }
