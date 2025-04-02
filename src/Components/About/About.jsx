@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-gray-50 px-6 py-12">
             {/* Left Side - Image */}
-            <div className="w-full md:w-1/2 flex justify-center">
+            <div className="w-full md:w-1/2 flex justify-center mt-3">
                 <img
                     src={image}
                     alt="Task Management"

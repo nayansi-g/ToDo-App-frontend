@@ -39,15 +39,15 @@ const SignIn = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-50">
       <ToastContainer />
        
-      <div className="w-full max-w-4xl bg-white/80 backdrop-blur-md shadow-lg rounded-xl p-8 md:p-12 grid grid-cols-1 md:grid-cols-2">
+      <div className="w-full max-w-4xl bg-gray-50 backdrop-blur-md shadow-lg rounded-xl p-8 md:p-12 grid grid-cols-1 md:grid-cols-2">
         {/* Left Side (Header) */}
-        <div className="flex flex-col items-center justify-center text-black p-6  bg-gray-100 ">
+        <div className="flex flex-col items-center justify-center text-black p-6  bg-gray-50 ">
           <h1 className="text-2xl font-semibold">Sign In</h1>
           <h1 className="text-2xl font-semibold">Page</h1>
         </div>
 
         {/* Right Side (Form) */}
-        <div className="flex flex-col justify-center bg-gray-100 p-6">
+        <div className="flex flex-col justify-center bg-gray-50 p-6">
           <form className="space-y-3" onSubmit={submitForm}>
             <input
               className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400 transition-all"
