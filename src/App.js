@@ -12,6 +12,8 @@ import {useDispatch} from 'react-redux';
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import { authActr } from './Components/Store';
+import ContactPage from './Components/Contact/Contact';
+import Contact from './Components/Contact/Contact';
 
 
 const App = () => {
@@ -37,6 +39,7 @@ const App = () => {
           <Route path='/signup' element={<SignUp />} />
           <Route path='signin' element={<SignIn />} />
           <Route path='/todo' element={<Todo />} />
+          <Route path='/contact' element={<Contact />} />
           <Route path='/footer' element={<Footer />} />
 
           <Route />
