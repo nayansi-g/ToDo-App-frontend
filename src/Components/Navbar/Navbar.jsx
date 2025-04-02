@@ -19,14 +19,14 @@ const Navbar = () => {
     <nav className="bg-white text-black px-6 py-3 shadow-md sticky top-0 z-10">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="  flex flex-col items-center leading-tight ">
-           <sup className="text-3xl flex items-center text-red-500  font-extrabold"><GiWhiteBook /> Todo </sup><sub className="font-semibold">Create your own list</sub>
-        </Link>
+        <div className="  flex items-center justify-center leading-tight text-4xl flex items-center text-red-500  font-extrabold">
+           <GiWhiteBook  /> Todo 
+        </div>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-xl focus:outline-none"
+          className="md:hidden text-2xl border-2 border-gray-200 p-1 rounded-md focus:outline-none"
         >
           ☰
         </button>
